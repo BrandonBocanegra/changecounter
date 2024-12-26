@@ -1,0 +1,33 @@
+package coincounter;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Number of Quarters: ");
+		int quarters = scanner.nextInt();
+		
+		System.out.print("Number of Dimes: ");
+		int dimes = scanner.nextInt();
+		
+		System.out.print("Number of Nickels: ");
+		int nickels = scanner.nextInt();
+		
+		System.out.print("Number of Pennies: ");
+		int pennies = scanner.nextInt();
+		
+		 double Q = quarters * 0.25;
+		 double D = dimes * 0.10;
+		 double N = nickels * 0.05;
+		 double P = pennies * 0.01;
+		 
+		 double amount = Q + D + N + P;
+		 
+		 System.out.printf("Total: $%.2f%n" , amount);
+		 
+		 scanner.close();
+	}
+
+}
